@@ -4,9 +4,9 @@ const Home = () => {
         window.intercomSettings = {
           api_base: "https://api-iam.intercom.io",
           app_id: "pjd2a4rs",
-          name: "Ram", // Full name
-          user_id: "267", // a UUID for your user
-          email: "ram@gmail.com", // the email for your user
+          name: "", // Full name
+          user_id: "uix267", // a UUID for your user
+          email: "abc@gmail.com", // the email for your user
           created_at: Date.now() // Signup date as a Unix timestamp
         };
       </script>
