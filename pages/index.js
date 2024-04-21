@@ -1,14 +1,14 @@
 const Home = () => {
     const intercomScript = `
-      <script type="text/javascript">
+    <script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         window.voiceflow.chat.load({
-          verify: { projectID: '662501360d7189e2f702aa48' },
+          verify: { projectID: '6625230a0d7189e2f702ab45' },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production',
-          render: {
+	  render: {
 	mode: 'embedded',
 	target: document.body,
 },
