@@ -22,7 +22,7 @@ autostart: true
   
     return (
       <>
-        <h1>Intercom Testing</h1>
+        
         <div dangerouslySetInnerHTML={{ __html: intercomScript }} />
       </>
     );
