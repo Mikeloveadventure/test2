@@ -1,20 +1,18 @@
 const Home = () => {
     const intercomScript = `
-      <script>
-        window.intercomSettings = {
-          api_base: "https://api-iam.intercom.io",
-          app_id: "pjd2a4rs",
-          name: "", // Full name
-          user_id: "uix267", // a UUID for your user
-          email: "abc@gmail.com", // the email for your user
-          created_at: Date.now() // Signup date as a Unix timestamp
-        };
-      </script>
-  
-      <script>
-        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/pjd2a4rs'
-        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);ic("show");}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uwwrolxb';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-      </script>
+      <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '662501360d7189e2f702aa47' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
     `;
   
     return (
