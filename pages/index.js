@@ -10,7 +10,7 @@ const Home = () => {
           versionID: 'production',
           render: {
 	mode: 'embedded',
-	target: document.getElementById('flat-chat'),
+	target: document.body,
 },
 autostart: true
         });
