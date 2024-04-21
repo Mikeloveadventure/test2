@@ -5,7 +5,7 @@ const Home = () => {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         window.voiceflow.chat.load({
-          verify: { projectID: '662501360d7189e2f702aa47' },
+          verify: { projectID: '662501360d7189e2f702aa48' },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production'
         });
