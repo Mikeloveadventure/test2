@@ -21,10 +21,10 @@ autostart: true
     `;
   
     return (
-      <>
-        
+      <div>
+
         <div dangerouslySetInnerHTML={{ __html: intercomScript }} />
-      </>
+      </div>
     );
   };
   
